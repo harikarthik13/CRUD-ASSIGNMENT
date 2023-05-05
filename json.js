@@ -93,7 +93,7 @@ function userCreate() {
 function showUserEditBox(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", `http://localhost:3000/VehicleInsurance${id}`);
+    xhttp.open("GET", `http://localhost:3000/VehicleInsurance/${id}`);
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -140,7 +140,7 @@ function userEdit(id) {
     const filename = "assets/images/" + imageInput.files[0].name;
     if (validate_edit() == true) {
         const xhttp = new XMLHttpRequest();
-        xhttp.open("PUT", `http://localhost:3000/VehicleInsurance${id}`);
+        xhttp.open("PUT", `http://localhost:3000/VehicleInsurance/${id}`);
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(
             JSON.stringify({
@@ -148,7 +148,6 @@ function userEdit(id) {
                 VehicleNo: VehicleNo,
                 VehicleType: VehicleType,
                 Date: Date,
-                Address: Address,
                 Period: Period,
                 Amount: Amount,
                 Image: filename,
@@ -156,7 +155,7 @@ function userEdit(id) {
             })
 
         );
-        xhttp.onreadystatechange = function () {
+        xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 loadTable();
             }
@@ -164,11 +163,10 @@ function userEdit(id) {
     }
 }
 
-
 function userDelete(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", `http://localhost:3000/VehicleInsurance${id}`);
+    xhttp.open("DELETE", `http://localhost:3000/VehicleInsurance/${id}`);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     Swal.fire({
         title: 'Are you sure?',
