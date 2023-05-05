@@ -1,0 +1,36 @@
+{
+    "VehicleInsurance": [
+      {
+        "VehicleNo": "tn37 A1234",
+        "VehicleType": "Two-Wheeler",
+        "Date": "05.04.2023",
+        "Period": "5 years",
+        "Amount":10000 ,
+        "VehicleImage":"https://www.melivecode.com/users/1.png"
+      },
+      {
+        "VehicleNo": "tn32 A2741",
+        "VehicleType": "Two-Wheeler",
+        "Date": "01.04.2023",
+        "Period": "5 years",
+        "Amount":10000 ,
+        "VehicleImage":"https://www.melivecode.com/users/1.png"
+      },
+      {
+        "VehicleNo": "tn63 D7234",
+        "VehicleType": "Four-Wheeler",
+        "Date": "01.02.2023",
+        "Period": "3 years",
+        "Amount":20000 ,
+        "VehicleImage":"https://www.melivecode.com/users/1.png"
+      },
+      {
+        "VehicleNo": "tn48 A1378",
+        "VehicleType": "Four-Wheeler",
+        "Date": "02.02.2023",
+        "Period": "3 years",
+        "Amount":20000 ,
+        "VehicleImage":"https://www.melivecode.com/users/1.png"
+      }
+    ]
+    }
