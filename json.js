@@ -3,7 +3,7 @@ function loadTable(VehicleNo = '') {
     xhttp.open("GET", `http://localhost:3000/VehicleInsurance?VehicleNo_like=${VehicleNo}`);
     xhttp.send();
 
-    xhttp.onreadystatechange = function () {
+    xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
             var trHTML = "";
