@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>VehicleInsurance</title>
-    <link rel="shortcut icon" href="/assets/vi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/insurance.png" type="image/x-icon">
 
     <link href="style.css" rel="stylesheet">
 </head>
@@ -19,23 +19,48 @@
     <nav class="navbar navbar-light bg-mynav">
         <div class="container-fluid">
             <a class="navbar-brand text-white pt-2  ms-5 mt-3" href="#">
-                <img src="assets/vi.png" alt="" width="60px" height="50px" class="d-inline-block align-text-top"><b class="ps-2 text-white">veh-ins</b></a>
+                <img src="assets/images/insurance.png" alt="" width="60px" height="50px" class="d-inline-block align-text-top"><b class="ps-2 text-white" style="font-size: large;font-family:sans-serif;">United India Insurance</b></a>
             <div class="me-5 p-3">
                 <a herf="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <input id="searchvalue" type="search" class="ps-3 pe-2 border-2 border-dark rounded-pill" placeholder="Search by Restaurant" onkeyup="search()">
             </div>
         </div>
     </nav>
-
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/bg.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/bg3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/bg1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <div class="container">
         <div class="d-flex bd-highlight mb-3">
             <div class="me-auto me-4 p-2 bd-highlight">
-                <h2> VehicleInsurance</h2></div>
+                <h2 style="font-family: cursive;"> Vehicle-Insurance</h2></div>
             <div class="p-2 bd-highlight">
                 <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
             </div>
         </div>
-
+        
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>

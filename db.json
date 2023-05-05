@@ -5,8 +5,8 @@
       "VehicleType": "Two-Wheeler",
       "Date": "05.04.2023",
       "Period": "5 years",
-      "Amount": 10000,
-      "Image": "https://www.melivecode.com/users/1.png",
+      "Amount": "10000",
+      "Image": "assets/images/ninja.jpg",
       "id": 1
     },
     {
@@ -14,8 +14,8 @@
       "VehicleType": "Two-Wheeler",
       "Date": "01.04.2023",
       "Period": "5 years",
-      "Amount": 10000,
-      "Image": "https://www.melivecode.com/users/1.png",
+      "Amount": "10000",
+      "Image": "assets/images/bullet1.jpg",
       "id": 2
     },
     {
@@ -23,8 +23,8 @@
       "VehicleType": "Four-Wheeler",
       "Date": "01.02.2023",
       "Period": "3 years",
-      "Amount": 20000,
-      "Image": "https://www.melivecode.com/users/1.png",
+      "Amount": "20000",
+      "Image": "assets/images/car1.jpg",
       "id": 3
     },
     {
@@ -33,7 +33,7 @@
       "Date": "02.02.2023",
       "Period": "4 years",
       "Amount": "20000",
-      "Image": "assets/images/vi.png",
+      "Image": "assets/images/car2.jpg",
       "id": 4
     }
   ]
