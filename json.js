@@ -69,7 +69,7 @@ function userCreate() {
 
     if (validate() == true) {
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "http://localhost:3000/VehicleInsurance/");
+        xhttp.open("POST", "http://localhost:3000/VehicleInsurance");
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(
             JSON.stringify({
@@ -93,7 +93,7 @@ function userCreate() {
 function showUserEditBox(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", `http://localhost:3000/VehicleInsurance/${id}`);
+    xhttp.open("GET", `http://localhost:3000/VehicleInsurance${id}`);
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -140,7 +140,7 @@ function userEdit(id) {
     const filename = "assets/images/" + imageInput.files[0].name;
     if (validate_edit() == true) {
         const xhttp = new XMLHttpRequest();
-        xhttp.open("PUT", `http://localhost:3000/VehicleInsurance/${id}`);
+        xhttp.open("PUT", `http://localhost:3000/VehicleInsurance${id}`);
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(
             JSON.stringify({
@@ -168,7 +168,7 @@ function userEdit(id) {
 function userDelete(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", `http://localhost:3000/VehicleInsurance/${id}`);
+    xhttp.open("DELETE", `http://localhost:3000/VehicleInsurance${id}`);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     Swal.fire({
         title: 'Are you sure?',
@@ -218,6 +218,13 @@ function validate() {
         return false;
     }
     else {
+        Swal.fire({
+            title: "Successfully Created",
+            icon: "success",
+            showConfirmButton: true
+
+
+        })
         return true;
     }
 }
@@ -228,7 +235,7 @@ function validate_edit() {
     const Date = document.getElementById("Date").value;
     const Period = document.getElementById("Period").value;
     const Amount = document.getElementById("Amount").value;
-   
+
     if (VehicleNo == "" || VehicleType == "" || Date == "" || Period == "" || Amount == "") {
         Swal.fire({
             title: "Fields should not be empty",
@@ -238,7 +245,12 @@ function validate_edit() {
         return false;
     }
 
-   else{
+    else {
+        Swal.fire({
+            title: "Successfully Edited",
+            icon: "success",
+            showConfirmButton: true
+        })
         return true;
     }
 }
