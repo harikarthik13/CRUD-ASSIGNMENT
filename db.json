@@ -26,15 +26,6 @@
       "Amount": "20000",
       "Image": "assets/images/car1.jpg",
       "id": 3
-    },
-    {
-      "VehicleNo": "tn48 A1378",
-      "VehicleType": "Four-Wheeler",
-      "Date": "02.02.2023",
-      "Period": "4 years",
-      "Amount": "20000",
-      "Image": "assets/images/car2.jpg",
-      "id": 4
     }
   ]
 }
